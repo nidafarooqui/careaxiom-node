@@ -17,7 +17,7 @@ async function doOnRequest(request, response) {
     const regex = new RegExp(/\/I\/want\/title(?:\/?|.*)$/);
 
 
-    if (request.method === 'GET' && regex.test(request.url)) {
+    if (request.method === 'GET' && regex.test(request.url) && addresses) {
         response.writeHead(200, {
             'Content-Type': 'text/html'
         });
@@ -45,6 +45,10 @@ async function doOnRequest(request, response) {
 
 
 
+    } else if (!addresses) {
+        response.statusCode = 200;
+        response.write('Add a query to view a list of addresses.');
+        response.end();
     } else {
         response.statusCode = 404;
         response.write('404 - Not Found. Try a different path.');
