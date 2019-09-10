@@ -2,6 +2,8 @@
 
 ### Use `npm install` to install the dependencies
 
+### node version - 12.3.1
+
 1. #### Callbacks
 
     Run `npm run callbacks` to view the callbacks exercise. 
