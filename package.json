@@ -1,0 +1,26 @@
+{
+  "name": "node-test",
+  "version": "1.0.0",
+  "description": "caremerge test",
+  "main": "callbacks.js",
+  "scripts": {
+    "callbacks": "nodemon callbacks.js",
+    "async": "nodemon async.js",
+    "promises": "nodemon promises.js",
+    "streams": "nodemon streams.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "async": "^3.1.0",
+    "cheerio": "^1.0.0-rc.3",
+    "prepend-http": "^3.0.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "rxjs": "^6.5.3"
+  }
+}
