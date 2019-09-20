@@ -1,4 +1,4 @@
-# careaxiom-node
+# node
 
 ### Use `npm install` to install the dependencies
 
